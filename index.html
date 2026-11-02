@@ -1,18 +1,47 @@
+<!-- 
+Template for IMA's Creative Coding Lab 
+
+Project A: Generative Creatures
+CCLaboratories Biodiversity Atlas 
+-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <script src="libraries/p5.js"></script>
-  <script src="libraries/p5.sound.js"></script>
+    <title>milkfrog</title>
 
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <meta charset="utf-8" />
+    <!-- allow special characters, including Arabic, Chinese, Korean, Japanese, etc. -->
+    <meta charset="UTF-8">
+    <!-- link the style sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- import p5.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.3.4/lib/p5.js"></script>
+    <script>
+        // prevent scrolling when spacebar and arrow keys are pressed.
+        window.addEventListener("keydown", function (e) { if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) { e.preventDefault(); } }, false);
+    </script>
 </head>
 
 <body>
-  <main>
-  </main>
-  <script src="sketch-example.js"></script>
+    <!-- title -->
+    <div id="title-wrapper">
+        <h1 class="headline green">milkfrog</h1>
+    </div>
+
+
+    <!-- Footer -->
+    <div id="footer" class="black">
+        <p>A CCLab project made by Snowy in 26fall</p>
+    </div>
+
+    <!-- Home: Link back to the ATLAS page-->
+    <div id="home">
+        <a href="https://cclab.work/atlas">Back to the ATLAS</a>
+    </div>
+
+    <!-- Include your sketch.js file here -->
+    <script src="sketch.js" type="text/javascript"> </script>
 </body>
 
 </html>
